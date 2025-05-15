@@ -1,4 +1,6 @@
-from src.volumes import Cylinder
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from volumes import Cylinder
 
 class TestCylinder:
 
