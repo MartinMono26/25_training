@@ -3,7 +3,7 @@ import pytest
 class TestVolume:
 
     def test_toto(self):
-        return 1
+        assert(True)
 
     def test_tata(self):
-        return 0
+        assert(False)
