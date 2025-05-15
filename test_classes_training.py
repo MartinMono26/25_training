@@ -9,7 +9,13 @@ class TestCylinder:
             diameter=4
         )
         v = c1.get_volume()
-        assert(v==25.132741228718345)
+        assert (v==25.132741228718345)
 
-    def test_tata(self):
-        assert(False)
+    def test_how_many_cylinders(self):
+        c2 = Cylinder(
+            name='c2',
+            height=2,
+            diameter=4
+        )
+        print(f"Nb of cylinders: {Cylinder.nb_cylinder}")
+        assert (Cylinder.nb_cylinder==2)

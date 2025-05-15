@@ -27,7 +27,7 @@ class Cylinder(Volume):
         return math.pi * (0.5 * diameter) ** 2 * height
 
     @classmethod
-    def how_mamy_cylinders(cls):
+    def how_many_cylinders(cls):
         return cls.nb_cylinder
 
     @classmethod
@@ -53,7 +53,7 @@ if __name__ == '__main__':
         diameter=8
     )
 
-    print(f"{Cylinder.how_mamy_cylinders()} cylinders have been created")
+    print(f"{Cylinder.how_many_cylinders()} cylinders have been created")
 
     c3=Cylinder.depuis_chaine(chaine="c4-2.5-5.8")
 
