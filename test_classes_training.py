@@ -1,4 +1,4 @@
-from classes_training import Cylinder
+from volumes import Cylinder
 
 class TestCylinder:
 
