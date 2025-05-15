@@ -7,5 +7,6 @@ class Vehicle:
 
 
 class Car(Vehicle):
-    def __init__(self):
+    def __init__(self, name):
         Vehicle.nb_vehicle += 1
+        self.name=name
