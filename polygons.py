@@ -3,9 +3,10 @@ class Polygon:
 
     def __init__(self, name):
         self.name=name
+        self.shape=None
 
 class Square(Polygon):
-    def __init__(self, name:str, side_length_mm=10):
+    def __init__(self, name:str='no_name', side_length_mm=10):
         super().__init__(name=name)
         self.area = None
         self.shape="square"
@@ -15,6 +16,6 @@ class Square(Polygon):
     def area_of_square(side_length_mm:float):
         return side_length_mm**2
 
-    def add_area(self):
+    def compute_area(self):
         self.area=Square.area_of_square(self.side_length_mm)
 
