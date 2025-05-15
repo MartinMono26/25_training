@@ -9,13 +9,13 @@ class Volume:
 
 class Cylinder(Volume):
     nb_cylinder=0
-    def __init__(self, name:str, height:int, diameter:float):
+    def __init__(self, name:str, diameter:float, height:int):
         super().__init__(
             name=name
         )
         Cylinder.nb_cylinder+=1
-        self.height = height
         self.diameter = diameter
+        self.height = height
 
     def get_volume(self) -> float:
         return self.get_cylinder_volume(
